@@ -85,5 +85,7 @@ navLinks.forEach(link => {
 
 
 
+
+
 //FUNCTION CALL
 autoSlide();

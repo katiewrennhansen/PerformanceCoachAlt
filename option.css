@@ -2,7 +2,6 @@
 GLOBAL STYLES
 ==============================================================
 */
-
 html {
     box-sizing: border-box;
     margin: 0;
@@ -39,7 +38,7 @@ h2 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 40px;
+    font-size: 40px
     padding-bottom: 20px;
 }
 
@@ -51,7 +50,8 @@ h4,
 address,
 .contact p,
 .services h1,
-.services h2 {
+.services h2,
+.saq-main h1 {
     font-family: 'Jockey One', sans-serif;
 }
 
@@ -86,8 +86,6 @@ input[type="submit"],
 }
 
 .facility {
-    /* background: #252429;
-    color: white; */
     padding: 60px 0;
 }
 
@@ -212,17 +210,17 @@ HOME PAGE
 */
 
 .home-page {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/IMG_0359.JPG');
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_0359.JPG');
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_0359.JPG');
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/cover-desktop.JPG');
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: white; 
-    text-align: center; 
-}
+    text-align: center;
+} 
 
 .home-page-content{
     width: 90%;
@@ -252,7 +250,6 @@ h1 {
 ABOUT 
 ==============================================================
 */
-
 .about-content {
     padding-bottom: 60px;
 }
@@ -348,7 +345,6 @@ IMAGE CAROSEL
     transition: all 700ms ease-in-out 300ms;
 }
 
-
 #next, #prev {
     cursor: pointer;
     position: absolute;
@@ -369,9 +365,6 @@ IMAGE CAROSEL
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
-
-
-
 
 .slide:nth-child(1) {
     background: url('./images/SAQ.png') no-repeat center center/cover;
@@ -600,22 +593,12 @@ input[type="submit"]:hover {
         display: flex;
         justify-content: space-around;
     }
-
-
+    .copyright a {
+        font-size: 12px;
+        text-decoration: underline;
+    }
 }
 @media (min-width: 1000px){
-    .home-page {
-        background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/cover-desktop.JPG');
-        background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        color: white; 
-        text-align: center;
-    } 
     .home-page-content {
         padding-top: 40vh;
     }
@@ -623,157 +606,9 @@ input[type="submit"]:hover {
 
 
 
-
-
-
-
 /* SERVICES
 ========================================================= */
 .services-main {
-    background-color: #252429;
-}
-
-.services {
-    padding-top: 150px;
-    color: white;
-}
-
-.services h1 {
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 45px;
-    letter-spacing: 0.1em;
-}
-
-.services h2 {
-    font-size: 20px;
-    padding-bottom: 10px;
-    text-transform: none;
-}
-
-.services p {
-    margin: 10px 0 20px;
-}
-
-.thumbnail-container {
-    padding-bottom: 50px;
-}
-
-.thumbnail {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.service-img {
-    width: 100%;
-}
-
-.service-content {
-    padding: 20px 0;
-}
-
-.service-content a {
-    color: white;
-    text-decoration: underline;
-    background: #25242900;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid rgba(186, 186, 186, 0.25);
-    margin-top: 30px;
-}
-
-
-.book-btn {
-    text-align: center;
-}
-
-.book-btn-container a {
-    padding: 8px 25px;
-}
-
-.service-description {
-    opacity: 0;
-    height: 0px;
-}
-
-@media (min-width: 768px) {
-    .services h1 {
-        padding: 80px 0 140px;
-        font-size: 70px;
-    }
-    .services-content {
-        padding-bottom: 20px;
-    }
-    .thumbnail-container {
-        display: flex;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-    .thumbnail {
-        border: 1px solid white;
-        margin: 0 10px;
-        max-width: 350px;
-        overflow: hidden;
-    }
-    .services h2 {
-        padding-bottom: 20px;
-    }
-    .service-content {
-        padding: 30px 30px 20px;
-        text-align: center;
-    } 
-    .services a {
-        padding: 10px 22px;
-    }
-    .service-description {
-        padding-bottom: 50px;
-    }
-    .book-btn-container {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        background: #252429;
-        z-index: 10;
-    }
-    .book-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -40px;
-        margin-top: -20px;
-    }
-    .thumbnail:hover > img {
-        opacity: 0;
-        transform: scale(1.1);
-        transition: 400ms;
-    }
-    .thumbnail:hover > .service-content h2,
-    .thumbnail:hover > .service-content p {
-        transform: translateY(-160px);
-        transition: transform 400ms;
-    }
-    .thumbnail:hover > .service-content p {
-        opacity: 1;
-        transition: 400ms;
-    }
-    
-}
-
-
-
-
-/* SERVICES
-========================================================= */
-.services-main {
-    background-color: #252429;
     background-color: white;
 }
 
@@ -804,7 +639,7 @@ hr {
 
 .thumbnail-container {
     padding-bottom: 50px;
-}
+ }
 
 .thumbnail {
     margin: 20px 0;
@@ -822,7 +657,6 @@ hr {
 }
 
 .service-content a {
-    color: white;
     text-decoration: underline;
     background: #252429;
 }
@@ -853,7 +687,7 @@ hr {
         font-size: 70px;
     }
     .services-content {
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
     .thumbnail-container {
         display: flex;
@@ -861,13 +695,14 @@ hr {
         margin: 0 auto;
     }
     .thumbnail {
-        background:#252429;
+        border: 2px solid #252429;
+        box-shadow: 1px 1px 2px #25242941;
         margin: 0 10px;
         max-width: 350px;
         overflow: hidden;
     }
     .services {
-        color: white;
+        color: #252429;
     }
     .services h2 {
         padding-bottom: 20px;
@@ -882,13 +717,16 @@ hr {
     .service-description {
         padding-bottom: 50px;
     }
+    .service-content a {
+        background: rgba(255, 255, 255, 0);
+    }
     .book-btn-container {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 100px;
-        background: #252429;
+        background: white;
         z-index: 10;
     }
     .book-btn {
@@ -912,5 +750,15 @@ hr {
         opacity: 1;
         transition: 400ms;
     }
-    
 }
+
+
+/* SAQ PAGE */
+
+.saq-content {
+    padding-top: 200px;
+}
+.saq-main h1 {
+    margin: 0;
+}
+

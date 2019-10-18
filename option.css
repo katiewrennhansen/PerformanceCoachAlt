@@ -51,7 +51,7 @@ address,
 .contact p,
 .services h1,
 .services h2,
-.saq-main h1 {
+.single-service-main h1 {
     font-family: 'Jockey One', sans-serif;
 }
 
@@ -66,7 +66,9 @@ input[type="submit"],
 .services p,
 .thumbnail a,
 .caption,
-.number {
+.number,
+.single-service-content p,
+.single-service-content a {
     font-family: Oswald, sans-serif;
 }
 
@@ -613,7 +615,7 @@ input[type="submit"]:hover {
 }
 
 .services {
-    padding-top: 250px;
+    padding-top: 100px;
     color: #252429;
 }
 
@@ -658,7 +660,8 @@ input[type="submit"]:hover {
 
 .service-content a {
     text-decoration: underline;
-    background: #252429;
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
 }
 
 hr {
@@ -676,12 +679,12 @@ hr {
     padding: 8px 25px;
 }
 
-.service-description {
-    opacity: 0;
-    height: 0px;
-}
+
 
 @media (min-width: 768px) {
+    .services {
+        padding-top: 250px;
+    }
     .services h1 {
         padding: 80px 0 140px;
         font-size: 70px;
@@ -736,6 +739,10 @@ hr {
         margin-left: -40px;
         margin-top: -20px;
     }
+    .service-description {
+        opacity: 0;
+        height: 0px;
+    }
     .thumbnail:hover > img {
         opacity: 0;
         transform: scale(1.1);
@@ -755,10 +762,34 @@ hr {
 
 /* SAQ PAGE */
 
-.saq-content {
-    padding-top: 200px;
+.single-service-content {
+    padding: 100px 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
 }
-.saq-main h1 {
+.single-service-main h1 {
     margin: 0;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 0.1em;
 }
 
+.single-service-content a {
+    color: rgba(254, 97, 72, 1);
+}
+
+.single-service-content img {
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .single-service-content {
+        padding-top: 250px;
+    }
+    .single-service-main h1 {
+        padding: 80px 0;
+        font-size: 70px;
+    }
+}

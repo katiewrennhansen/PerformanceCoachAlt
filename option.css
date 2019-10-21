@@ -227,7 +227,7 @@ HOME PAGE
 .home-page-content{
     width: 90%;
     margin: 0 auto;
-    padding-top: 30vh;
+    padding-top: 10vh;
 }
 
 h1 {
@@ -252,7 +252,7 @@ h1 {
 ABOUT 
 ==============================================================
 */
-.about-content {
+.about {
     padding-bottom: 60px;
 }
 
@@ -524,6 +524,11 @@ input[type="submit"]:hover {
         transform: translateY(-300px);
     }
 }
+@media (min-width: 500px){
+    .home-page-content {
+        padding-top: 20vh;
+    }
+}
 @media (min-width: 768px){
     .image-container img {
         width: 200px;
@@ -569,14 +574,27 @@ input[type="submit"]:hover {
     .home-page p {
         margin-bottom: 50px;
     }
+    .about {
+        padding: 120px 50px;
+    }
+    .about img {
+        width: 100%;
+        height: 100%;
+        margin-top: 80px;
+    }
+    .headshot,
+    .about-content {
+        width: 60%;
+        margin: 0 auto;
+    }
     h2 {
         font-size: 50px;
     }
     .about-content h2 {
-        padding-top: 60px;
+        padding-top: 30px;
     }
     .about-content p {
-        width: 70%;
+        width: 100%;
         font-size: 19px;
         letter-spacing: 0.03em;
     }
@@ -604,6 +622,24 @@ input[type="submit"]:hover {
     .home-page-content {
         padding-top: 40vh;
     }
+}
+@media (min-width: 1200px){
+    .flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about img {
+        width: 95%;
+        height: auto;
+        margin: 20px 0px 0px 40px;
+    }
+    .about-content h2 {
+        padding: 0;
+    }
+    .about-content {
+        width: 60%;
+        margin: 10px;
+    } 
 }
 
 
@@ -797,5 +833,24 @@ hr {
     .single-service-main h1 {
         padding: 80px 0 120px;
         font-size: 70px;
+    }
+}
+@media (min-width: 1200px) {
+    .flex-service {
+        display: flex;
+        margin-top: 40px;
+    }
+    .flex-service img {
+        width: 50%;
+    }
+    .flex-service-content {
+        width: 80%;
+        margin-left: 30px;
+    }
+    .flex-service-content p {
+        margin-top: 0;
+    }
+    .flex-service-content h3 {
+        margin-top: 30px;
     }
 }

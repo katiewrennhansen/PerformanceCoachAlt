@@ -432,9 +432,19 @@ CONTACT
     margin-top: 50px;
 }
 
+.contact i {
+    transform: scale(1);
+    transition: 50ms linear;
+}
+
+.contact i:hover {
+    transform: scale(1.3);
+    transition: transform 200ms ease-in-out;
+    color: white;
+}
+
 .contact .fab {
     color: black;
-
 }
 
 .contact .fas {
@@ -488,6 +498,7 @@ input[type="email"]:hover,
 textarea:hover {
     border: 2px solid white;
     outline: none;
+    transition: 50ms;
 }
 
 input[type="submit"]:hover {
@@ -509,6 +520,11 @@ input[type="submit"]:hover {
     color: black;
     margin: 0;
 }
+
+.copyright a:hover {
+    color: white;
+}
+
 
 @media (max-width: 500px){
     .slide .content {
@@ -718,7 +734,6 @@ hr {
     margin-top: 30px;
 }
 
-
 .book-btn {
     text-align: center;
 }
@@ -800,15 +815,29 @@ hr {
         opacity: 0;
         height: 0px;
     }
+    .thumbnail > img {
+        opacity: 1;
+        transform: scale(1);
+        transition: 400ms;
+    }
     .thumbnail:hover > img {
         opacity: 0;
         transform: scale(1.1);
         transition: 400ms;
     }
+    .thumbnail > .service-content h2,
+    .thumbnail > .service-content p {
+        transform: translateY(0px);
+        transition: transform 400ms; 
+    }
     .thumbnail:hover > .service-content h2,
     .thumbnail:hover > .service-content p {
         transform: translateY(-160px);
         transition: transform 400ms;
+    }
+    .thumbnail > .service-content p {
+        opacity: 0;
+        transition: 400ms;
     }
     .thumbnail:hover > .service-content p {
         opacity: 1;

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>The Performance Coach | SAQ</title>
-        <link rel="stylesheet" href="../option.css">
+        <link rel="stylesheet" href="../main.css">
         <link rel="shortcut icon" type="image/png" href="../images/FavIcon.png"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Jockey+One|Oswald|Manjari:100&display=swap" rel="stylesheet">
@@ -62,19 +62,21 @@
                     <p><a href="mailto:iamtheperformancecoach@gmail.com">iamtheperformancecoach@gmail.com</a></p>
                     <p>480-253-9781</p>
                     <div class="icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iamtheperformancecoach/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="#header"><i class="fas fa-chevron-up"></i></a>
                     </div>
                 </div>
                 <div class="col2">
-                    <form action="">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="text" placeholder="Subject">
-                        <textarea rows="5" placeholder="Message"></textarea>
-                        <input class="submit" type="submit">
+                    <form id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="_replyto" placeholder="Email">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea rows="5" name="message" placeholder="Message"></textarea>
+                        <input type="hidden" name="_next" value="https://katiewrennhansen.github.io/PerformanceCoachAlt/"/>
+                        <input id="contact-form-submit" type="submit">
+                        <input type="hidden" name="_subject" value="New Message" />
                     </form>
                     <div class="copyright">
                         <p><i class="far fa-copyright"></i> 2019. The Performance Coach. All Rights Reserved. Website by <a href='https://katiewrennhansen.github.io' target="_blank">katiewrennhansen</a></p>

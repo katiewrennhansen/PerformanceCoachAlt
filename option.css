@@ -33,7 +33,6 @@ i {
     font-size: 20px;
 }
 
-
 h2 {
     margin: 0;
     text-transform: uppercase;
@@ -79,7 +78,6 @@ input[type="submit"],
     font-size: 14px;
     cursor: pointer;
 }
-
 
 .about,
 .facility {
@@ -203,7 +201,6 @@ nav a {
 
 .nav-link a:hover {
     color: rgba(254, 97, 72, 1);
-
 }
 
 /* 
@@ -741,7 +738,6 @@ hr {
 .book-btn-container a {
     padding: 8px 25px;
 }
-
 
 
 @media (min-width: 768px) {

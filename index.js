@@ -11,7 +11,7 @@ const controls = document.querySelectorAll('.image-controls');
 const auto = true;
 const intervalTime = 5000;
 let slideInterval;
-
+const contactForm = document.getElementById('contact-form');
 
 
 //FUNCTIONS
@@ -71,11 +71,20 @@ function autoSlide(){
 }
 
 
+// //handle contact form submission
+// function handleSubmit(e){
+//     e.preventDefault();
+//     const data = new FormData(contactForm)
+//     console.log(data)
+// }
+
+
 
 //EVENT LISTENERS
 toggleBtn.addEventListener('click', navToggle);
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
+contactForm.addEventListener('submit', handleSubmit)
 
 navLinks.forEach(link => {
     link.addEventListener('click', hideNav);

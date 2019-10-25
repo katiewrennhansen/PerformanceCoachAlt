@@ -307,12 +307,11 @@ SPORTS
 */
 .sports {
     background: rgb(245, 245, 245);
-    padding-top: 100px;
     color: #252429;
 }
 
 .sport-content-container {
-    padding: 60px;
+    padding: 160px 50px;
 }
 
 .sports h2 {
@@ -577,7 +576,8 @@ textarea:hover {
         width: 60%;
         margin: 0 auto;
     }
-    h2 {
+    h2,
+    .sports h2 {
         font-size: 50px;
     }
     .about-content h2 {
@@ -592,6 +592,16 @@ textarea:hover {
         font-size: 32px;
         width: 80%;
         margin: 50px auto;
+    }
+
+    .sport-thumbnail-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .sport-thumbnail {
+        margin: 0;
     }
     i {
         font-size: 30px;
@@ -636,6 +646,11 @@ textarea:hover {
     .about-content {
         width: 60%;
         margin: 10px;
+    }
+    .sport-thumbnail-container {
+        padding: 160px 120px;
+        grid-gap: 50px;
+
     }
     .facility-flex {
         display: flex;

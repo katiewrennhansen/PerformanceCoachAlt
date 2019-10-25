@@ -50,6 +50,7 @@ address,
 .contact p,
 .services h1,
 .services h2,
+.sports h2,
 .single-service-main h1 {
     font-family: 'Jockey One', sans-serif;
 }
@@ -68,7 +69,9 @@ textarea,
 .number,
 .single-service-content p,
 .single-service-content a,
-.service-content button {
+.service-content button,
+.sport-content button,
+.sport-content p {
     font-family: Oswald, sans-serif;
 }
 
@@ -297,88 +300,60 @@ ABOUT
 }
 
 
+
 /* 
-IMAGE CAROSEL
+SPORTS
 ==============================================================
 */
-.image-carosel {
-    background:#252429;
+.sports {
+    background: rgb(245, 245, 245);
+    padding-top: 100px;
+    color: #252429;
 }
 
-.image-carosel-content {
+.sport-content-container {
+    padding: 60px;
+}
+
+.sports h2 {
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+}
+
+.sports h3 {
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    margin: 15px 0;
+}
+
+.sport-thumbnail {
     position: relative;
-}
-
-.slider {
-    position: relative;
-    overflow: hidden;
-    height: 75vh;
-    width: 100vw;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.current {
-    opacity: 1;
-}
-
-.slide .content {
-    position: absolute;
-    bottom: 100px;
-    left: -400px;
-    width: 400px;
-    background-color: rgba(255, 255, 255, 0.721);
-    padding: 35px;
-    opacity: 0;
-}
-
-.slide.current .content {
-    opacity: 1;
-    transform: translateX(400px);
-    transition: all 700ms ease-in-out 300ms;
-}
-
-#next, #prev {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -16px;
-    padding: 20px;
     color: white;
-    font-size: 35px;
-    background: rgba(0, 0, 0, 0);
-    border: none;
+    margin: 50px 0;
+    overflow: hidden;
 }
 
-#next{
-    right: 0px;
+.sport-img {
+    width: 100%;
 }
 
-#next:hover,
-#prev:hover {
-    color: rgb(211, 211, 211);
-    transition-duration: 200ms;
-    transition-timing-function: ease-in-out;
+.sport-content {
+    position: absolute;
+    bottom: 3px;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
-.slide:nth-child(1) {
-    background: url('./images/SAQ.png') no-repeat center center/cover;
+.sport-thumbnail > img {
+    transform: scale(1);
+    transition: 400ms;
 }
-
-.slide:nth-child(2) {
-    background: url('./images/TeanCamp.png') no-repeat center center/cover;
-}
-
-.slide:nth-child(3) {
-    background: url('./images/PerformanceTraining.png') no-repeat center center/cover;
+.sport-thumbnail:hover > img {
+    transform: scale(1.1);
+    transition: 400ms;
 }
 
 
@@ -729,7 +704,8 @@ textarea:hover {
     padding: 0;
 }
 
-.service-content button {
+.service-content button,
+.sport-content button {
     font-size: 14px;
     background: rgba(255, 255, 255, 0);
     border: 1px solid rgba(254, 97, 72, 1);
@@ -737,7 +713,8 @@ textarea:hover {
     color: rgba(254, 97, 72, 1);
 }
 
-.service-content button:hover {
+.service-content button:hover,
+.sport-content button:hover {
     border: 1px solid rgba(254, 97, 72, 0.75);
     color: rgba(254, 97, 72, 0.75);
     cursor: pointer;

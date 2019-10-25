@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Jockey+One|Oswald|Manjari:100&display=swap" rel="stylesheet">
 </head>
-<body>
+<body role="document">
     <header id="header">
         <div class="fixed-content">
             <div class="image-container">
                 <img id="logo" src="images/PCLogo.png" alt="performance coach logo">
             </div>
-            <nav>
-                <button class="toggle-button">
+            <nav role="navigation">
+                <button role="button" class="toggle-button">
                     <div id="bb-one" class="burger-bar"></div>
                     <div id="bb-two" class="burger-bar"></div>
                     <div id="bb-three" class="burger-bar"></div>
@@ -35,9 +35,9 @@
         </div>
         <section class="home-page" id="home">
             <div class="home-page-content">
-                <h1>The Performance Coach</h1>
+                <h1 role="heading">The Performance Coach</h1>
                 <p class="home-page-statement">A unique training experience</p>
-                <a class="book" href="services.html">Book Now</a>
+                <a role="link" class="book" href="services.html" aria-label="book a session with the Performance Coach">Book Now</a>
             </div>
         </section>
     </header>
@@ -49,7 +49,7 @@
                     <img src="images/headshot.JPG" alt="Coach Alex Jones">
                 </div>
                 <div class="about-content">
-                    <h2>Meet the Coach</h2>
+                    <h2 role="heading">Meet the Coach</h2>
                     <p>Alex Jones has emerged as one of the ideal performance coaches of the present time. His background begins with a walk-on opportunity for football and track and field at Gardner-Webb University as well as North Carolina Central University.  The result was three conference champions and a post-season birth in football. “The interest began there when I recognized that there was not only talent but proper training principles that I authored and performed well”, he states.</p>
                     <p>The interest then continued as he engaged with Olympic Track runners at St. Augustine’s University, while helping with the strength program for football as well.  An opportunity arose for arena football and was declined as the passion to properly teach and coach athletes strong-armed the individual chance.  The initiative would be followed with great pursuit as an opportunity to birth a strength program for a football team and coach would arise.</p>
                     <p>The results lead to a Head Track and Field Coach position which resulted in 18 athletes qualifying for regionals and 12 qualifying for the state championships.  The ensuing opportunity landed him as Director of Strength and Conditioning collegiately where professionals have resulted in the sports of football, softball, and basketball. The dream will continue as he spreads his knowledge to the younger athletes of today.  “If they are properly taught and trained early, it will elevate their chances of success anywhere athletically.”</p>
@@ -57,7 +57,7 @@
             </div>
             <div class="start-training">
                     <h3>Start Training Today</h3>
-                    <a class="about-btn book" href="services.html">Book a Session</a>
+                    <a role="link" class="about-btn book" href="services.html" aria-label="book a session with the Performance Coach">Book a Session</a>
                 </div>
         </section>
 
@@ -84,8 +84,8 @@
                 </div>
 
                 <div class="buttons">
-                    <a id="prev">&#10094;</a>
-                    <a id="next">&#10095;</a>
+                    <button role="button" id="prev">&#10094;</button>
+                    <button role="button" id="next">&#10095;</button>
                 </div>
                    
     
@@ -94,15 +94,15 @@
 
         <section class="facility" id="facility">
             <div class="facility-content">
-                <h2>Location / Calender</h2>
+                <h2 role="heading">Location / Calender</h2>
                 <div class="facility-flex">
                     <div class="locations">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Content coming soon. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div class="calendar">
                         <p>Check out the list of upcoming events and reserve your spot today!</p>
                         <div class="calendar-container">
-                            <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23000000&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=1&amp;showTabs=0" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+                            <iframe title="googleCalendar" src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23000000&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=1&amp;showTabs=0" style="border-width:0" frameborder="0" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>
@@ -113,29 +113,29 @@
     <footer class="contact" id="contact">
         <div class="contact-content">
             <div class="col1">
-                <h2>Contact Us</h2>
+                <h2 role="heading">Contact Us</h2>
                 <h4>Write or call if you have more questions</h4>
-                <p><a href="mailto:iamtheperformancecoach@gmail.com">iamtheperformancecoach@gmail.com</a></p>
+                <p><a href="mailto:iamtheperformancecoach@gmail.com" aria-label="email the Performance Coach">iamtheperformancecoach@gmail.com</a></p>
                 <p>480-253-9781</p>
                 <div class="icons">
-                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/iamtheperformancecoach/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-twitter" ></i></a>
-                    <a href="#header"><i class="fas fa-chevron-up"></i></a>
+                    <a role="link" href="#" target="_blank"><i class="fab fa-facebook-f" aria-label="find the Performance Coach on Facebook"></i></a>
+                    <a role="link" href="https://www.instagram.com/iamtheperformancecoach/" target="_blank" aria-label="find the Performance Coach on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a role="link" href="#" target="_blank"><i class="fab fa-twitter" aria-label="find the Performance Coach on Twitter"></i></a>
+                    <a role="link" href="#header"><i class="fas fa-chevron-up" aria-label="return to the top of the page"></i></a>
                 </div>
             </div>
             <div class="col2">
-                <form id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="_replyto" placeholder="Email">
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea rows="5" name="message" placeholder="Message"></textarea>
+                <form role="form" id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
+                    <input role="textbox" type="text" name="name" placeholder="Name" aria-label="Name">
+                    <input role="textbox" type="text" name="_replyto" placeholder="Email" aria-label="Email">
+                    <input role="textbox" type="text" name="subject" placeholder="Subject"aria-label="Subject" >
+                    <textarea rows="5" name="message" placeholder="Message" aria-label="Message"></textarea>
                     <input type="hidden" name="_next" value="https://katiewrennhansen.github.io/PerformanceCoachAlt/"/>
-                    <input id="contact-form-submit" type="submit">
-                    <input type="hidden" name="_subject" value="New Message" />
+                    <input type="hidden" name="_subject" value="New Message"/>                    
+                    <input role="button" id="contact-form-submit" type="submit">
                 </form>
                 <div class="copyright">
-                        <p><i class="far fa-copyright"></i> 2019. The Performance Coach. All Rights Reserved. Website by <a href='https://katiewrennhansen.github.io' target="_blank">katiewrennhansen</a></p>
+                    <p><i class="far fa-copyright"></i> 2019. The Performance Coach. All Rights Reserved. Website by <a href='https://katiewrennhansen.github.io' target="_blank">katiewrennhansen</a></p>
                 </div>
             <div>  
         </div>

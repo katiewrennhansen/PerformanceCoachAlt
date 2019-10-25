@@ -353,6 +353,8 @@ IMAGE CAROSEL
     padding: 20px;
     color: white;
     font-size: 35px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 #next{

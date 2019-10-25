@@ -101,10 +101,14 @@ textarea,
     margin: 0 auto;
 }
 
+.book {
+    background-color: rgba(254, 97, 72);
+    transition: 200ms ease-in;  
+}
+
 .book:hover {
     background-color: rgba(254, 97, 72, 0.75);
-    transition-duration: 200ms;
-    transition-timing-function: ease-in;
+    transition: 200ms ease-in;
 }
 
 
@@ -201,6 +205,11 @@ nav a {
     height: 90vh;
     transition: opacity 400ms;
     opacity: 1;
+}
+
+.nav-link a {
+    color: white;
+    transition: 200ms ease-in-out;
 }
 
 .nav-link a:hover {
@@ -324,7 +333,7 @@ SPORTS
 .sports h3 {
     font-size: 22px;
     letter-spacing: 0.1em;
-    margin: 15px 0;
+    margin: 100px 0 10px;
 }
 
 .sport-thumbnail {
@@ -342,8 +351,23 @@ SPORTS
     position: absolute;
     bottom: 3px;
     padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     width: 100%;
+}
+
+.sport-content button {
+    font-size: 14px;
+    background: rgba(254, 97, 72, 1);
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    transition: 400ms linear;
+}
+
+.sport-content button:hover {
+    background: rgba(254, 97, 72, 0.75);
+    border: none;
+    transition: 400ms linear;
 }
 
 .sport-thumbnail > img {
@@ -476,12 +500,17 @@ textarea:hover {
     transition: 50ms;
 }
 
+.contact-form button {
+    transition: 200ms ease-in;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
 .contact-form button:hover {
     background-color: rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: white;
-    transition-duration: 200ms;
-    transition-timing-function: ease-in;
+    transition: 200ms ease-in;
 }
 
 .copyright p {
@@ -496,8 +525,14 @@ textarea:hover {
     margin: 0;
 }
 
+.copyright a {
+    transition: 200ms linear;
+    color: black;
+}
+
 .copyright a:hover {
     color: white;
+    transition: 200ms linear;
 }
 
 
@@ -719,8 +754,7 @@ textarea:hover {
     padding: 0;
 }
 
-.service-content button,
-.sport-content button {
+.service-content button {
     font-size: 14px;
     background: rgba(255, 255, 255, 0);
     border: 1px solid rgba(254, 97, 72, 1);
@@ -728,8 +762,7 @@ textarea:hover {
     color: rgba(254, 97, 72, 1);
 }
 
-.service-content button:hover,
-.sport-content button:hover {
+.service-content button:hover  {
     border: 1px solid rgba(254, 97, 72, 0.75);
     color: rgba(254, 97, 72, 0.75);
     cursor: pointer;

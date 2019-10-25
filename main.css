@@ -320,7 +320,7 @@ SPORTS
 }
 
 .sport-content-container {
-    padding: 160px 50px;
+    padding: 120px 50px;
 }
 
 .sports h2 {
@@ -682,10 +682,12 @@ textarea:hover {
         width: 60%;
         margin: 10px;
     }
+    .sports h2 {
+        padding-bottom: 0;
+    }
     .sport-thumbnail-container {
-        padding: 160px 120px;
+        padding: 120px;
         grid-gap: 50px;
-
     }
     .facility-flex {
         display: flex;
@@ -752,20 +754,6 @@ textarea:hover {
     text-decoration: underline;
     background: rgba(255, 255, 255, 0);
     padding: 0;
-}
-
-.service-content button {
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0);
-    border: 1px solid rgba(254, 97, 72, 1);
-    padding: 8px 16px;
-    color: rgba(254, 97, 72, 1);
-}
-
-.service-content button:hover  {
-    border: 1px solid rgba(254, 97, 72, 0.75);
-    color: rgba(254, 97, 72, 0.75);
-    cursor: pointer;
 }
 
 hr {

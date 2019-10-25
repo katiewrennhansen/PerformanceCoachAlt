@@ -61,13 +61,14 @@ address,
 input[type="text"],
 input[type="email"],
 textarea,
-input[type="submit"],
+.contact-form button,
 .services p,
 .thumbnail a,
 .caption,
 .number,
 .single-service-content p,
-.single-service-content a {
+.single-service-content a,
+.service-content button {
     font-family: Oswald, sans-serif;
 }
 
@@ -468,7 +469,7 @@ form {
 input[type="text"],
 input[type="email"],
 textarea,
-input[type="submit"]{
+.contact-form button{
     border: 2px solid black;
     background: rgba(254, 97, 72, 1);
     margin: 5px 0;
@@ -485,7 +486,7 @@ input[type="textarea"] {
     color: black;
 }
 
-input[type="submit"] {
+.contact-form button {
     width: 30%;
     text-align: center;
 }
@@ -501,7 +502,7 @@ textarea:hover {
     transition: 50ms;
 }
 
-input[type="submit"]:hover {
+.contact-form button:hover {
     background-color: rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: white;
@@ -726,6 +727,20 @@ input[type="submit"]:hover {
     text-decoration: underline;
     background: rgba(255, 255, 255, 0);
     padding: 0;
+}
+
+.service-content button {
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(254, 97, 72, 1);
+    padding: 8px 16px;
+    color: rgba(254, 97, 72, 1);
+}
+
+.service-content button:hover {
+    border: 1px solid rgba(254, 97, 72, 0.75);
+    color: rgba(254, 97, 72, 0.75);
+    cursor: pointer;
 }
 
 hr {

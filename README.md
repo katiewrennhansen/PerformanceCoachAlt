@@ -10,3 +10,4 @@ To Do:
 4. Switch to PC google calendar account 
 5. Add facebook and twitter accounts
 6. Add indevidual sport pages
+7. Make performance training page

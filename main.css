@@ -127,7 +127,7 @@ NAVIGATION
 }
 
 .image-container {
-    padding-top: 30px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -559,7 +559,11 @@ textarea:hover {
     }
     .toggle-button {
         display: none;
-    }   
+    }  
+     .fixed-content {
+        background: none;
+        background-image: linear-gradient(#252429, #25242900);
+    }
     nav ul {
         display: flex;
         justify-content: center;
@@ -571,6 +575,7 @@ textarea:hover {
         font-family: 'Jockey One', sans-serif;
     }
     .collapse-content {
+        background: none;
         transition-duration: 0ms;
         opacity: 1;
         font-size: 20px;
@@ -869,6 +874,12 @@ hr {
         opacity: 1;
         transition: 400ms;
     }
+    /* .service-content.up {
+        opacity: 1;
+        height: 300px;
+        transition: 400ms;
+    } */
+   
 }
 @media(min-width: 1000px){
     .service-content {

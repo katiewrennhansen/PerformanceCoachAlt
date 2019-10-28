@@ -24,11 +24,11 @@
                     </button>
                     <div class="collapse-content">
                         <ul>
-                            <li class="nav-link"><a href="../index.html">Home</a></li>
-                            <li class="nav-link"><a href="../index.html#about">About</a></li>
-                            <li class="nav-link"><a href="../index.html#sports">Sports</a></li>
-                            <li class="nav-link"><a href="../index.html#facility">Location / Calendar</a></li>
-                            <li class="nav-link"><a href="../index.html#contact">Contact</a></li>
+                            <li class="nav-link"><a href="../main.html">Home</a></li>
+                            <li class="nav-link"><a href="../main.html#about">About</a></li>
+                            <li class="nav-link"><a href="../main.html#sports">Sports</a></li>
+                            <li class="nav-link"><a href="../main.html#facility">Location / Calendar</a></li>
+                            <li class="nav-link"><a href="../main.html#contact">Contact</a></li>
                             <li class="nav-link"><a href="../services.html">Services</a></li>
                         </ul> 
                     </div>
@@ -70,14 +70,14 @@
                     </div>
                 </div>
                 <div class="col2">
-                    <form id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" name="_replyto" placeholder="Email">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea rows="5" name="message" placeholder="Message"></textarea>
+                    <form role="form" class="contact-form" id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
+                        <input role="textbox" type="text" name="name" placeholder="Name" aria-label="Name">
+                        <input role="textbox" type="text" name="_replyto" placeholder="Email" aria-label="Email">
+                        <input role="textbox" type="text" name="subject" placeholder="Subject"aria-label="Subject" >
+                        <textarea rows="5" name="message" placeholder="Message" aria-label="Message"></textarea>
                         <input type="hidden" name="_next" value="https://katiewrennhansen.github.io/PerformanceCoachAlt/"/>
-                        <input id="contact-form-submit" type="submit">
-                        <input type="hidden" name="_subject" value="New Message" />
+                        <input type="hidden" name="_subject" value="New Message"/>                    
+                        <button role="button" id="contact-form-submit" type="submit">Send</button>
                     </form>
                     <div class="copyright">
                         <p><i class="far fa-copyright"></i> 2019. The Performance Coach. All Rights Reserved. Website by <a href='https://katiewrennhansen.github.io' target="_blank">katiewrennhansen</a></p>

@@ -38,23 +38,9 @@ function onScroll(){
         fixed.style.backgroundColor = '#252429';
         fixed.style.background = '#252429';
         fixed.style.backgroundImage = 'linear-gradient(#252429, #252429)';
-
-
     }
 }
 
-// function tabIn(i){
-//     console.log(i)
-//     console.log('start')
-//     serviceContent[i].style.height = '200px';
-//     serviceContent[i].style.opacity = 1;
-// }
-// function tabOut(i){
-//     console.log(i)
-//     console.log('end')
-//     serviceContent[i].style.height = '0px';
-//     serviceContent[i].style.opacity = 0;
-// }
 
 
 window.addEventListener('scroll', onScroll)
@@ -67,11 +53,4 @@ navLinks.forEach(link => {
     link.addEventListener('click', hideNav);
 });
 
-// learn.forEach((btn, i) => {
-//     btn.addEventListener('focus', tabIn(i));
-//     btn.addEventListener('blur', tabOut(i))
-// })
-
-// learn.addEventListener(
-// })
 

@@ -316,7 +316,6 @@ QUOTE
 ==============================================================
 */
 .quote {
-    /* position: relative; */
     background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('images/SAQ.png');
     background-position: center;
     background-size: cover;
@@ -331,7 +330,6 @@ QUOTE
     top: 50%;
     margin-top: 50px;
     text-align: center;
-    z-index: 3;
     color: white;
     font-size: 22px;
 }
@@ -544,7 +542,7 @@ textarea:hover {
        z-index: 999;
     }
     .home-page-content {
-        padding-top: 38vh;
+        padding-top: 35vh;
     }
     h1 {
         font-size: 70px;
@@ -614,7 +612,7 @@ textarea:hover {
 }
 @media (min-width: 1000px){
     .home-page-content {
-        padding-top: 40vh;
+        padding-top: 38vh;
     }
 }
 @media (min-width: 1200px){

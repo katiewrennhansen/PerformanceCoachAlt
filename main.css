@@ -71,7 +71,8 @@ textarea,
 .single-service-content a,
 .service-content a,
 .sport-content a,
-.sport-content p {
+.sport-content p,
+.quote-text p {
     font-family: Oswald, sans-serif;
 }
 
@@ -311,72 +312,28 @@ ABOUT
 
 
 /* 
-SPORTS
+QUOTE
 ==============================================================
 */
-.sports {
-    background: rgb(245, 245, 245);
-    color: #252429;
+.quote {
+    /* position: relative; */
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('images/SAQ.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-width: 100%;
+    height: 80vh;
 }
 
-.sport-content-container {
-    padding: 120px 50px;
-}
-
-.sports h2 {
-    text-align: center;
-    padding-bottom: 80px;
-    font-size: 45px;
-    letter-spacing: 0.1em;
-}
-
-.sports h3 {
-    font-size: 22px;
-    letter-spacing: 0.1em;
-    margin: 100px 0 10px;
-}
-
-.sport-thumbnail {
+.quote-text {
     position: relative;
+    top: 50%;
+    margin-top: 50px;
+    text-align: center;
+    z-index: 3;
     color: white;
-    margin: 50px 0;
-    overflow: hidden;
-}
-
-.sport-img {
-    width: 100%;
-}
-
-.sport-content {
-    position: absolute;
-    bottom: 3px;
-    padding: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
-    width: 100%;
-}
-
-.sport-content a {
-    font-size: 14px;
-    background: rgba(254, 97, 72, 1);
-    color: black;
-    padding: 8px 16px;
-    border: none;
-    transition: 400ms linear;
-}
-
-.sport-content a:hover {
-    background: rgba(254, 97, 72, 0.75);
-    border: none;
-    transition: 400ms linear;
-}
-
-.sport-thumbnail > img {
-    transform: scale(1);
-    transition: 400ms;
-}
-.sport-thumbnail:hover > img {
-    transform: scale(1.1);
-    transition: 400ms;
+    font-size: 22px;
 }
 
 
@@ -633,15 +590,6 @@ textarea:hover {
         width: 80%;
         margin: 50px auto;
     }
-    .sport-thumbnail-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 30px;
-    }
-    .sport-thumbnail {
-        margin: 0;
-    }
     i {
         font-size: 30px;
     }
@@ -685,13 +633,6 @@ textarea:hover {
     .about-content {
         width: 60%;
         margin: 10px;
-    }
-    .sports h2 {
-        padding-bottom: 0;
-    }
-    .sport-thumbnail-container {
-        padding: 120px;
-        grid-gap: 50px;
     }
     .facility-flex {
         display: flex;

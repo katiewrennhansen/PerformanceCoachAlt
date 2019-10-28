@@ -515,7 +515,7 @@ textarea:hover {
     .toggle-button {
         display: none;
     }  
-     .fixed-content {
+     .fixed-content.fade {
         background: none;
         background-image: linear-gradient(#252429, #25242900);
     }

@@ -49,8 +49,9 @@ h4,
 address,
 .contact p,
 .services h1,
+.whytrain h1,
 .services h2,
-.sports h2,
+.whytrain h2,
 .single-service-main h1 {
     font-family: 'Jockey One', sans-serif;
 }
@@ -97,7 +98,8 @@ textarea,
 .about-content,
 .facility-content,
 .contact-content,
-.services-content {
+.services-content,
+.train-content {
     width: 90%;
     margin: 0 auto;
 }
@@ -654,7 +656,8 @@ textarea:hover {
     color: #252429;
 }
 
-.services h1 {
+.services h1,
+.whytrain h1 {
     margin: 0;
     text-transform: uppercase;
     text-align: center;
@@ -813,12 +816,6 @@ hr {
         opacity: 1;
         transition: 400ms;
     }
-    /* .service-content.up {
-        opacity: 1;
-        height: 300px;
-        transition: 400ms;
-    } */
-   
 }
 @media(min-width: 1000px){
     .service-content {
@@ -899,5 +896,23 @@ hr {
     }
     .single-service-content img {
         margin-top: 0px;
+    }
+}
+
+
+
+
+/* WHY TRAIN
+========================================================= */
+.whytrain h1 {
+    padding: 30px 0 30px;
+}
+
+
+
+@media (min-width: 768px) {
+    .whytrain h1 {
+        padding: 230px 0;
+        font-size: 70px;
     }
 }

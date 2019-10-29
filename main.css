@@ -280,6 +280,10 @@ ABOUT
     width: 100%;
 }
 
+.about-content {
+    padding-bottom: 50px;
+}
+
 .about h2 {
     padding-top: 20px;
 }
@@ -349,6 +353,10 @@ FACILITY
     text-transform: uppercase;
     letter-spacing: 0.36em;
     font-size: 25px;
+}
+
+.locations {
+    padding-bottom: 10px;
 }
 
 .calendar-container {
@@ -510,7 +518,7 @@ textarea:hover {
         padding-top: 20vh;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 786px){
     .image-container img {
         width: 200px;
     }

@@ -1,33 +1,20 @@
-'use strict';
+const audio = document.getElementById('audio');
+const button = document.querySelector('button');
 
-//VARIABLES
-const toggleBtn = document.querySelector('.toggle-button');
-const collapse = document.querySelector('.collapse-content');
-const navLinks = document.querySelectorAll('.nav-link');
-const serviceThumbnails = document.querySelector('.thumbnail')
-const learn = document.querySelectorAll('.service-description a')
-const serviceContent = document.querySelectorAll('.service-description');
 
-//FUNCTIONS
+let playing = false;
 
-//toggle nav 
-function navToggle(){
-    toggleBtn.classList.toggle('cross');
-    collapse.classList.toggle('toggle');
+function audioPlay(){
+    if(!playing){
+        playing = !playing;
+        audio.play();
+        button.innerHTML = '<i class="fas fa-volume-up"></i>'
+    } else {
+        playing = !playing;
+        audio.pause();
+        button.innerHTML = '<i class="fas fa-volume-mute"></i>'
+
+    }
 }
-
-//hide nav
-function hideNav(){
-    collapse.classList.remove('toggle');
-    toggleBtn.classList.remove('cross');
-}
-
-
-//EVENT LISTENERS
-toggleBtn.addEventListener('click', navToggle);
-
-navLinks.forEach(link => {
-    link.addEventListener('click', hideNav);
-});
-
-
+    
+button.addEventListener('click', audioPlay);

@@ -9,14 +9,29 @@
     <link rel="shortcut icon" type="image/png" href="images/FavIcon.png"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Jockey+One|Oswald|Manjari:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One|Oswald|Manjari:100&display=swap" rel="stylesheet">
 </head>
     <body>
+        <audio id="audio" src="audio/intro.mp3">
+            <!-- <source > -->
+        </audio>
+
         <main>
             <div class='overlay'></div>
-            <img class='entry-video' src="images/PerformanceTraining.png">
-            <div>
+            <div class='video-bg'>
+                <video autoplay muted loop class="entry-video" id='video'>
+                    <source src="audio/Pexels Videos 2386581.mp4" type="video/mp4">
+                </video>
+            </div>  
+
+            <div class='enter-content'>
+                <h1>The Performance Coach</h1>
                 <a role='link' class="enter" href="main.html">Enter Site</a>
             </div>
+
+            <button><i class="fas fa-volume-mute"></i></button>
+
         </main>
+        <script src="index.js"></script>
     </body>
 </html>

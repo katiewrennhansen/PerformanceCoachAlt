@@ -4,8 +4,7 @@ This website is in the process of being built. For a live demo of the site, chec
 
 
 To Do:
-1. Add cover video
-2. Add content location, whytrain and services sections
-3. Switch formspree email to PC email
-4. Switch to PC google calendar account 
-5. Add facebook and twitter accounts
+1. Add content to cover video, location, whytrain and services sections
+2. Switch to PC google calendar account 
+3. Add facebook and twitter accounts
+4. Add paypal link

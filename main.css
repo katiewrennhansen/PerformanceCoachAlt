@@ -231,7 +231,6 @@ HOME PAGE
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/cover-desktop.JPG');
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -554,6 +553,9 @@ textarea:hover {
     .fixed-content {
        position: fixed;
        z-index: 999;
+    }
+    .home-page {
+        background-attachment: fixed;
     }
     .home-page-content {
         padding-top: 35vh;

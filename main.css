@@ -109,7 +109,8 @@ textarea,
     transition: 200ms ease-in;  
 }
 
-.book:hover {
+.book:hover,
+.book:focus {
     background-color: rgba(254, 97, 72, 0.75);
     transition: 200ms ease-in;
 }
@@ -142,9 +143,6 @@ NAVIGATION
     border: none;
 }
 
-.toggle-button:focus {
-    outline: none;
-}
 
 .burger-bar {
     background-color: white;
@@ -215,10 +213,13 @@ nav a {
     transition: 200ms ease-in-out;
 }
 
-.nav-link a:hover {
+.nav-link a:hover,
+.nav-link a:focus {
     color: rgba(254, 97, 72, 1);
     transition: 200ms ease-in-out;
 }
+
+
 
 /* 
 HOME PAGE 
@@ -471,7 +472,8 @@ textarea:hover {
     color: black;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
     background-color: rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: white;
@@ -493,9 +495,11 @@ textarea:hover {
 .copyright a {
     transition: 200ms linear;
     color: black;
+    font-size: 12px;
 }
 
-.copyright a:hover {
+.copyright a:hover,
+.copyright a:focus {
     color: white;
     transition: 200ms linear;
 }
@@ -772,7 +776,9 @@ hr {
         text-decoration: none;
     }
     .service-content a:hover,
-    .single-service-content a:hover {
+    .single-service-content a:hover,
+    .service-content a:focus,
+    .single-service-content a:focus {
         color:rgba(254, 97, 72, 0.75);
         border: 1px solid rgba(254, 97, 72, 0.75);
     }
@@ -806,13 +812,12 @@ hr {
         transform: scale(1.1);
         transition: 400ms;
     }
-    .thumbnail > .service-content h2,
-    .thumbnail > .service-content p {
+    .thumbnail > .service-content h2 {
         transform: translateY(0px);
         transition: transform 400ms; 
     }
     .thumbnail:hover > .service-content h2,
-    .thumbnail:hover > .service-content p {
+    .thumbnail:hover > .service-content p{
         transform: translateY(-160px);
         transition: transform 400ms;
     }

@@ -255,6 +255,11 @@ ABOUT
     height: 100%;
 }
 
+.headshot-container {
+    width: 50%;
+    margin: 100px auto 0;
+}
+
 .headshot {
     margin: 0;
     width: 100%;
@@ -265,7 +270,7 @@ ABOUT
 }
 
 .about p {
-    width: 85%;
+    width: 90%;
 }
 
 .start-training {
@@ -519,6 +524,10 @@ textarea:hover {
         width: 80%;
         margin: 60px auto;
     }
+    .quote {
+        background-attachment: fixed;
+
+    }
     .facility p {
         font-size: 20px;
     }
@@ -555,6 +564,12 @@ textarea:hover {
     .about-content {
         width: 60%;
         margin: 10px;
+    }
+    .headshot-container {
+        margin: 0;
+    }
+    .headshot-container img {
+        margin: 0;
     }
     .facility-flex {
         display: flex;
@@ -781,8 +796,10 @@ hr {
     line-height: 1.6;
 }
 
-dd {
-    margin: 0;
+.single-service-content h4 {
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -796,18 +813,23 @@ dd {
     .single-service-content p {
         font-size: 17px;
     }
+    .benefits-performance {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (min-width: 1200px) {
-    .flex-service {
-        display: flex;
-        margin-top: 40px;
-    }
     .flex-service img {
         width: 50%;
+        float: right;
+        margin: 0 0 40px 40px;
     }
     .flex-service-content {
-        width: 80%;
-        margin-left: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .single-service-content h2 {
+        margin-bottom: 30px;
     }
     .flex-service-content p {
         margin-top: 0;

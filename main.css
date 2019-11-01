@@ -76,7 +76,8 @@ textarea,
 .single-service-content p,
 .single-service-content a,
 .single-service-content li,
-.whytrain p {
+.whytrain p,
+.whytrain a {
     font-family: Oswald, sans-serif;
 }
 
@@ -84,7 +85,7 @@ textarea,
 .facility-content,
 .contact-content,
 .services-content,
-.train-content {
+.whytrain-content {
     width: 90%;
     margin: 0 auto;
 }
@@ -528,6 +529,10 @@ textarea:hover {
     i {
         font-size: 30px;
     }
+    .phone,
+    .email a {
+        font-size: 20px;
+    }
 }
 @media (min-width: 1000px){
     .home-page-content {
@@ -622,8 +627,7 @@ hr {
 
 
 @media (min-width: 768px) {
-    .services,
-    .whytrain {
+    .services {
         padding-top: 160px;
     }
     .services h1,
@@ -823,13 +827,38 @@ dd {
 /* WHY TRAIN
 ========================================================= */
 .whytrain h1 {
-    padding: 30px 0 30px;
+    padding: 120px 0 30px;
+    color: white;
+}
+
+.gym-image-container {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.train-content {
+    padding-bottom: 100px;
+}
+
+.whytrain-content {
+    padding-top: 40px;
+}
+
+.coach-image-container {
+    background-image: url('images/Coaching.JPG');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    overflow: hidden;
 }
 
 .whytrain ul {
     list-style: none;
+    padding: 0;
 }
-
 
 .whytrain p {
     margin: 0 0 40px;
@@ -839,11 +868,39 @@ dd {
     margin-bottom: 10px;
 }
 
+.whytrain-btn {
+    text-align: center;
+}
+
 @media (min-width: 768px) {
     .whytrain {
-        padding-bottom: 60px;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    .gym-image-container,
+    .coach-image-container {
+        background-attachment: fixed;
     }
     .whytrain h1 {
-        padding: 80px 0;
+        padding: 230px 0;
     }
+    .whytrain-content {
+        padding: 60px 0 20px;
+    }
+    .whytrain-btn {
+        margin-top: 80px;
+    }
+}
+@media (min-width: 1200px) {
+    .whytrain {
+        font-size: 18px;
+    }
+    .whytrain h1 {
+        padding: 300px 0;
+    }
+    .whytrain-content {
+        padding: 80px 0 40px;
+        width: 80%;
+    }
+
 }

@@ -860,6 +860,7 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    filter: grayscale(80%);
 }
 
 .train-content {

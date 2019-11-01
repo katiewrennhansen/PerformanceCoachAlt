@@ -860,7 +860,7 @@ hr {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 60vh;
     filter: grayscale(80%);
 }
 
@@ -906,6 +906,9 @@ hr {
     .gym-image-container,
     .coach-image-container {
         background-attachment: fixed;
+    }
+    .gym-image-container {
+        height: 80vh;
     }
     .whytrain h1 {
         padding: 230px 0;

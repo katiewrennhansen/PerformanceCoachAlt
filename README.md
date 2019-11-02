@@ -10,4 +10,5 @@ To Do:
     - performance training (format, measured performance, ages)
     - team camp (format, measured performance, ages) 
 2. Add facebook and twitter accounts
-3. Add paypal link
+3. Add paypal 
+4. Fix parallax issue with JS if time permits

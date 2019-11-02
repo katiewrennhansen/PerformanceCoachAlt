@@ -93,7 +93,7 @@ textarea,
 }
 
 .book {
-    background-color: rgba(254, 97, 72);
+    background-color: rgba(254, 97, 72, 1.0);
     -webkit-transition: 200ms ease-in;
          -o-transition: 200ms ease-in;
             transition: 200ms ease-in;

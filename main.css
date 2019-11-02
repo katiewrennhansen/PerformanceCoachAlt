@@ -864,13 +864,6 @@ hr {
 
 
 
-/* ============ STOPPED WEBKIT ADD HERE ==========*/
-
-
-
-
-
-
 /* SINGLE SERVICE PAGES
 ========================================================= */
 .single-service-content {
@@ -931,6 +924,7 @@ hr {
         font-size: 17px;
     }
     .benefits-performance {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -971,11 +965,14 @@ hr {
 }
 
 .gym-image-container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url('images/Gym.JPG');
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;
-    filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+            filter: grayscale(80%);
 }
 
 .train-content {

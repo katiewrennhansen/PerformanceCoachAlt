@@ -70,6 +70,7 @@ address,
 .facility p,
 input[type="text"],
 input[type="email"],
+input[type='submit'],
 textarea,
 .contact-form button,
 .services p,
@@ -802,6 +803,11 @@ hr {
         left: 50%;
         margin-left: -40px;
         margin-top: -20px;
+        padding: 10px 22px;
+        border: none;
+    }
+    .book-btn:hover {
+        cursor: pointer;
     }
     .service-description {
         opacity: 0;

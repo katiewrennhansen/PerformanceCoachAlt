@@ -366,6 +366,11 @@ FACILITY
     padding-bottom: 10px;
 }
 
+iframe {
+    max-width: 320px;
+    max-height: 360px;
+}
+
 /* 
 CONTACT 
 ==============================================================
@@ -596,6 +601,11 @@ textarea:hover {
         width: 80%;
         margin: 60px auto;
     }
+    iframe {
+        max-width: 700px;
+        max-height: 800px;
+    }
+    
     /* .quote {
         background-attachment: fixed;
     } */

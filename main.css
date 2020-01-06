@@ -329,9 +329,9 @@ QUOTE
 ==============================================================
 */
 .quote {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/QuoteImage.JPG');
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.JPG');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.JPG');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/QuoteImage.png');
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1042,9 +1042,9 @@ input.book-btn.book {
 }
 
 .gym-image-container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url('images/Gym.JPG');
-    background-image: -o-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/Gym.JPG');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .6)), to(rgba(0, 0, 0, .6))), url('images/WhyTrain.png');
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/WhyTrain.png');
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('images/WhyTrain.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 60vh;

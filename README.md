@@ -1,6 +1,6 @@
 # Performance Coach Website 
 
-This website is in the process of being built. For a live demo of the site, check out https://katiewrennhansen.github.io/PerformanceCoachAlt/
+This website is in the process of being built. For a live demo of the site, check out https://katiewrennhansen.github.io/the-performance-coach/
 
 
 To Do:

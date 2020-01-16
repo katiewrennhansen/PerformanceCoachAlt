@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://www.iamtpc.com/</loc>
+  <lastmod>2020-01-13T19:24:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/main.html</loc>
+  <lastmod>2020-01-13T19:23:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/whytrain.html</loc>
+  <lastmod>2020-01-13T19:28:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/services.html</loc>
+  <lastmod>2020-01-13T19:28:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/servicepages/saq.html</loc>
+  <lastmod>2020-01-13T19:28:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/servicepages/teamCamp.html</loc>
+  <lastmod>2020-01-13T19:28:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.iamtpc.com/servicepages/performanceTraining.html</loc>
+  <lastmod>2020-01-13T19:28:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

@@ -56,6 +56,7 @@ address,
 .home-page,
 .contact p,
 .services h1,
+.facility h1,
 .whytrain h1,
 .services h2,
 .whytrain h2,
@@ -72,7 +73,6 @@ input[type="text"],
 input[type="email"],
 input[type='submit'],
 textarea,
-.contact-form button,
 .services p,
 .thumbnail a,
 .service-content a,
@@ -81,7 +81,9 @@ textarea,
 .single-service-content li,
 .whytrain p,
 .whytrain a,
-.select-css {
+.select-css,
+.locations a,
+.book {
     font-family: Oswald, sans-serif;
 }
 
@@ -312,17 +314,6 @@ ABOUT
     width: 90%;
 }
 
-.start-training {
-    text-align: center;
-}
-
-.about h3 {
-    font-size: 30px;
-    letter-spacing: 0.4em;
-    width: 60%;
-    margin: 30px auto;
-}
-
 
 /* 
 QUOTE
@@ -332,13 +323,11 @@ QUOTE
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('images/QuoteImage.png');
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.png');
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/QuoteImage.png');
-    background-position: top center;
+    background-position: top left;
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
     height: 80vh;
-    -webkit-filter: grayscale(90%);
-            filter: grayscale(90%);
 }
 
 .quote-text {
@@ -351,27 +340,10 @@ QUOTE
     letter-spacing: 0.05em;
 }
 
-
-/* 
-FACILITY
-==============================================================
-*/
-.facility {
-    padding: 80px 0;
+.start-training {
+    margin-top: 60px;
 }
 
-.facility h2 {
-    padding-bottom: 20px;
-}
-
-.locations {
-    padding-bottom: 10px;
-}
-
-iframe {
-    max-width: 320px;
-    max-height: 360px;
-}
 
 /* 
 CONTACT 
@@ -383,6 +355,10 @@ CONTACT
 
 .contact-content {
     padding: 50px 0;
+}
+
+.col1 {
+    margin-bottom: 60px;
 }
 
 .write {
@@ -424,7 +400,7 @@ CONTACT
     font-size: 28px;
 } 
 
-form {
+/* form {
     margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -439,12 +415,12 @@ form {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-}
+} */
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
-textarea,
-.contact-form button {
+textarea, */
+.locations a {
     border: 2px solid black;
     background: rgba(254, 97, 72, 1);
     margin: 5px 0;
@@ -453,42 +429,30 @@ textarea,
     font-size: 16px;
 }
 
-::placeholder {
+/* ::placeholder {
     color: black;
-}
+} */
 
-.contact-form button {
+.locations a {
     width: 30%;
     text-align: center;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus,
-input[type="text"]:hover,
-input[type="email"]:hover,
-textarea:hover {
-    border: 2px solid white;
-    outline: none;
-    -webkit-transition: 50ms;
-         -o-transition: 50ms;
-            transition: 50ms;
-}
-
-.contact-form button {
     -webkit-transition: 200ms ease-in;
-         -o-transition: 200ms ease-in;
-            transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+       transition: 200ms ease-in;
 }
 
-.contact-form button:hover,
-.contact-form button:focus {
+.locations a:hover,
+.locations a:focus {
     background-color: rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: white;
     -webkit-transition: 200ms ease-in;
          -o-transition: 200ms ease-in;
             transition: 200ms ease-in;
+}
+
+.view-calendar {
+    margin-top: 30px;
 }
 
 .copyright p {
@@ -499,8 +463,6 @@ textarea:hover {
 
 .copyright i {
     font-size: 12px;
-    -ms-flex-item-align: end;
-            align-self: flex-end;
     margin: 0;
 }
 
@@ -603,22 +565,10 @@ textarea:hover {
         width: 80%;
         margin: 60px auto;
     }
-    iframe {
-        max-width: 700px;
-        max-height: 800px;
-    }
-    /* .quote {
-        background-attachment: fixed;
-    } */
-    .facility p {
-        font-size: 20px;
-    }
     .contact-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr;
     }
     i {
         font-size: 30px;
@@ -626,6 +576,9 @@ textarea:hover {
     .phone,
     .email a {
         font-size: 20px;
+    }
+    .locations {
+        padding: 95px 0 0 80px;
     }
 }
 @media (min-width: 1000px){
@@ -655,17 +608,6 @@ textarea:hover {
         width: 60%;
         margin: 10px;
     }
-    .facility-flex {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-    } 
-    .locations p {
-        margin-right: 80px;
-    }
 }
 
 
@@ -678,6 +620,7 @@ textarea:hover {
 
 .services h1,
 .whytrain h1,
+.facility h1,
 .single-service-main h1 {
     margin: 0;
     text-transform: uppercase;
@@ -787,6 +730,7 @@ input.book-btn.book {
         padding-top: 160px;
     }
     .services h1,
+    .facility h1,
     .train-content h1 {
         padding: 80px 0;
         font-size: 70px;
@@ -1120,4 +1064,12 @@ input.book-btn.book {
         width: 80%;
     }
 
+}
+
+
+
+/* CALENDAR PAGE
+========================================================= */
+.facility-content h1 {
+    padding-top: 250px;
 }

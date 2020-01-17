@@ -1,7 +1,6 @@
 @import "main.css";
 
 
-
 /* SERVICES
 ========================================================= */
 .services {
@@ -76,39 +75,15 @@ hr {
     padding-top: 50px;
 }
 
-.book-btn-container.team-camp input.book-btn.book {
+.book-btn-container.team-camp a.book-btn.book {
     top: 40px;
 }
 
-input.book-btn.book {
+a.book-btn.book {
     border: none;
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.select-css {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    font-size: 15px;
-    color: #444;
-    line-height: 1.3;
-    padding: .6em 1.4em .5em .8em;
-    width: 100%;
-    max-width: 100%; 
-    border: 1px solid #aaa;
-    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-    border-radius: 0px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-image: url('images/arrow-down-filled-triangle.png'),
-      linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
-    background-repeat: no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size: .65em auto, 100%;
 }
 
 .icon-credit {
@@ -181,20 +156,11 @@ input.book-btn.book {
         background: white;
         z-index: 10;
     }
-    select.select-css {
-        line-height: 1;
-        padding: .5em 1.2em .5em .6em;
-        width: 180px;
-        top: 50%;
-        left: 50%;
-        margin-left: -90px;
-        margin-top: -50px;
-    }
     .book-btn-container.team-camp {
         padding-top: 10px;
     }
-    input.book-btn.book,
-    .book-btn-container.team-camp input.book-btn.book  {
+    a.book-btn.book,
+    .book-btn-container.team-camp a.book-btn.book {
         font-size: 16px;
         position: absolute;
         top: 50%;
@@ -409,35 +375,59 @@ iframe {
 
 /* REGISTRATION PAGE
 ========================================================= */
-form {
-    margin: 50px 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+.registration {
+    background: rgba(254, 97, 72, 1);
+    padding-bottom: 100px;
 }
+
+form {
+    margin: 0 auto;
+    padding: 80px;
+    border: 2px solid black;
+    background: white;
+    max-width: 800px;
+}
+
 
 input[type="text"],
 input[type="email"],
+select,
 .contact-form button,
 textarea {
+    box-sizing: border-box;
     border: 2px solid black;
-    background: rgba(254, 97, 72, 1);
-    margin: 5px 0;
+    margin: 5px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     font-size: 16px;
 }
 
+.contact-form button {
+    background: rgba(254, 97, 72, 1);
+    width: 200px;
+}
+
+.contact-form button:hover,
+.contact-form button:focus {
+    background-color: rgba(254, 97, 72, 0.7);
+    cursor: pointer;
+    color: white;
+    -webkit-transition: 200ms ease-in;
+            -o-transition: 200ms ease-in;
+            transition: 200ms ease-in;
+}
+
+select {
+    border: 2px solid black;
+    border-radius: 0px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('images/arrow-down-filled-triangle.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
 
 ::placeholder {
     color: black;
@@ -445,4 +435,17 @@ textarea {
 
 .registration-content h1 {
     padding-top: 250px;
+}
+
+.radio {
+    margin: 30px 0 ;
+}
+
+
+@media (min-width: 768px){
+    .form-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
 }

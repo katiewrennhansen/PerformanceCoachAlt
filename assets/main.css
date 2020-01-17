@@ -72,7 +72,8 @@ address,
 .facility p,
 input[type="text"],
 input[type="email"],
-input[type='submit'],
+input[type="submit"],
+label,
 textarea,
 .services p,
 .thumbnail a,
@@ -85,7 +86,8 @@ textarea,
 .select-css,
 .locations a,
 .book,
-.contact-form button {
+.contact-form button,
+.contact-form p {
     font-family: Oswald, sans-serif;
 }
 
@@ -408,7 +410,7 @@ CONTACT
     background: rgba(254, 97, 72, 1);
     margin: 5px 0;
     width: 100%;
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 16px;
 }
 

@@ -1073,3 +1073,29 @@ input.book-btn.book {
 .facility-content h1 {
     padding-top: 250px;
 }
+.facility-flex {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.cal-locations {
+    padding-bottom: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width: 768px){
+    iframe {
+        height: 600px;
+    }
+}
+
+@media (min-width: 1200px){
+    iframe {
+        height: 750px;
+    }
+}

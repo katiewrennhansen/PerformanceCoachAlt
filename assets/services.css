@@ -338,8 +338,9 @@ a.book-btn.book {
 
 /* CALENDAR PAGE
 ========================================================= */
-.facility-content h1 {
-    padding-top: 250px;
+.facility-content h1,
+.registration-content h1 {
+    padding-top: 100px;
 }
 .facility-flex {
     width: 90%;
@@ -357,6 +358,10 @@ iframe {
 }
 
 @media (min-width: 768px){
+    .facility-content h1,
+    .registration-content h1 {
+        padding-top: 250px;
+    }
     iframe {
         height: 600px;
     }
@@ -431,10 +436,6 @@ select {
 
 ::placeholder {
     color: #252429;
-}
-
-.registration-content h1 {
-    padding-top: 250px;
 }
 
 .radio {

@@ -551,7 +551,7 @@ CONTACT
     .contact-content {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: 1fr;
+        grid-template-rows: auto 60px;
     }
     i {
         font-size: 30px;

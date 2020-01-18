@@ -388,10 +388,10 @@ form {
     max-width: 800px;
 }
 
-
 input[type="text"],
 input[type="email"],
 select,
+option,
 .contact-form button,
 textarea {
     box-sizing: border-box;
@@ -430,7 +430,7 @@ select {
 }
 
 ::placeholder {
-    color: black;
+    color: #252429;
 }
 
 .registration-content h1 {

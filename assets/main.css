@@ -87,7 +87,9 @@ textarea,
 .locations a,
 .book,
 .contact-form button,
-.contact-form p {
+.contact-form p,
+option,
+select {
     font-family: Oswald, sans-serif;
 }
 

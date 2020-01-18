@@ -40,11 +40,11 @@
         <section class="registration-content">
             <h1 role="heading">Registration Form</h1>
 
-            <form role="form" class="contact-form" id="contact-form" action="https://formspree.io/xeqjaork" method="POST">
+            <form role="form" class="contact-form" id="contact-form" action="https://formspree.io/xpzaokjn" method="POST">
                 <p>Please fill out all fields. Alex will contact you with more information.</p>
                 <div class="form-group">
-                    <input role="textbox" type="text" name="first" placeholder="First Name" aria-label=" First Name" required>
-                    <input role="textbox" type="text" name="last" placeholder="Last Name" aria-label="Last Name" required>
+                    <input role="textbox" type="text" name="first-name" placeholder="First Name" aria-label=" First Name" required>
+                    <input role="textbox" type="text" name="last-name" placeholder="Last Name" aria-label="Last Name" required>
                 </div>
 
                 <div class="form-group">
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="form-group">
-                    <select required>
+                    <select name="selected-service" required>
                         <option value="">Select a service...</option>
                         <option value="SAQ">SAQ</option>
                         <option value="Team Camp">Team Camp</option>
@@ -64,16 +64,16 @@
                 <div class="radio" required>
                     <h3>Have you attended before?</h3>
                     <label for="yes">
-                        <input type="radio" name="yes">
+                        <input type="radio" name="previous-attendance" value="yes">
                         Yes
                     </label>
                     <label for="no">
-                        <input type="radio" name="no">
+                        <input type="radio" name="previous-attendance" value="no">
                         No
                     </label>
                 </div>
 
-                <textarea rows="5" name="message" placeholder="Additional Comments" aria-label="Additional Comments"></textarea>
+                <textarea rows="5" name="additional-comments" placeholder="Additional Comments" aria-label="Additional Comments"></textarea>
                 <input type="hidden" name="_next" value="https://www.iamtpc.com"/>
                 <input type="hidden" name="_subject" value="New Message"/>                    
                 <button role="button" id="contact-form-submit" type="submit">Register</button>
